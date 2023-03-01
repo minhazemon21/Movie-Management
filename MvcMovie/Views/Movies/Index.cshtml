@@ -82,6 +82,7 @@
         </table>
 
     <button class="btn btn-primary" id="btnref" onclick="window.location.reload()">Refresh</button>
+    <button class="btn btn-link" onclick="cancelBtn()">Go to Google</button>
     </div>
 <script type="text/javascript">
     //$(document).ready(function () {
@@ -102,6 +103,12 @@
     //    }
 
     //});
-    
+    function cancelBtn() {
+        //console.log("This is Cancel button");
+        //alert("This is Cancel button")
+        var url = 'https://www.google.com/search?q=bangladesh';
+        window.open(url);
+
+    }
     
 </script>
